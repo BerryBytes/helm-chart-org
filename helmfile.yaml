@@ -1,0 +1,26 @@
+repositories:
+  - name: zerone
+    url: https://berrybytes.github.io/helm-chart-org
+
+releases:
+  - name: sealed-secrets
+    namespace: sealed-secrets
+    chart: zerone/sealed-secrets
+  - name: zerone
+    namespace: cert-manager
+    chart: zerone/cert-manager
+  - name: argo
+    namespace: argo
+    chart: zerone/argo
+  - name: contour
+    namespace: projectcontour
+    chart: zerone/contour
+  - name: prometheus-operator
+    namespace: monitoring
+    chart: zerone/prometheus-operator
+    set:
+    - name: grafana.persistence.enabled
+      value: true
+    - name: grafana.persistence.size
+      value: 1Gi
+
