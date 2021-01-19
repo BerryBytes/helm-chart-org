@@ -3,14 +3,14 @@ entries:
   argo:
   - apiVersion: v1
     appVersion: v2.11.3
-    created: "2020-10-12T21:42:30.396410758+05:45"
+    created: "2021-01-20T01:08:32.580060882+05:45"
     dependencies:
     - condition: minio.install
       name: minio
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 5.0.6
     description: A Helm chart for Argo Workflows
-    digest: 03cfa07a3c37d288e5fdf57df1a46dc057f65aab324a4543ef3c405a9dad582d
+    digest: e3db4c56acad687271209ba71ec95b730ea72e9de08bafd7c4beeca654bde50c
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     maintainers:
@@ -25,9 +25,9 @@ entries:
   cert-manager:
   - apiVersion: v1
     appVersion: v1.0.3
-    created: "2020-10-12T21:42:30.41060688+05:45"
+    created: "2021-01-20T01:08:32.582043314+05:45"
     description: A Helm chart for cert-manager
-    digest: 482b6f9f522bc5e4d437179b30db8991eaba5479006d67ea9d9e43abac7ac02d
+    digest: 56ddeae94e4fbaebd397ebf510abe2a1fc0ecffa717a207a1b523f714d8e0a20
     home: https://github.com/jetstack/cert-manager
     icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
     keywords:
@@ -47,18 +47,40 @@ entries:
   contour:
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2020-10-12T21:42:30.411886522+05:45"
+    created: "2021-01-20T01:08:32.603279236+05:45"
     description: A Helm chart for Kubernetes
-    digest: 0a996818d693aeb5a3a6fdc38fb0cbc246f917cbb3a6345be0b466a1c4981ff6
+    digest: 002c90d78bc208ffa4b4589925b4f54bf72ab95125f732a566e510097fce3504
     name: contour
     type: application
     urls:
     - https://berrybytes.github.io/helm-chart-org/contour-0.1.0.tgz
     version: 0.1.0
+  dns-controller:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-20T01:08:32.624590061+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 93871cba306e26731ae6ca72f9eaa7ce70453f8bcf8bf72d7452fbda5c82cf36
+    name: dns-controller
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/dns-controller-0.1.0.tgz
+    version: 0.1.0
+  lb-controller:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-20T01:08:32.626665274+05:45"
+    description: A Helm chart for Kubernetes
+    digest: ef27b943dffbd8660832191c9448b300d1a58dc933ceac106f7f245505e55b19
+    name: lb-controller
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/lb-controller-0.1.0.tgz
+    version: 0.1.0
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2020-10-12T21:42:30.429821777+05:45"
+    created: "2021-01-20T01:08:32.784937282+05:45"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -91,9 +113,9 @@ entries:
   sealed-secrets:
   - apiVersion: v1
     appVersion: 0.12.4
-    created: "2020-10-12T21:42:30.430432664+05:45"
+    created: "2021-01-20T01:08:32.799603568+05:45"
     description: A Helm chart for Sealed Secrets
-    digest: a850a6b4ca7c05724688be107b3799b18cdc2511a13b94294da1e7755a668b8e
+    digest: 0d681d9952f0c33e12c67e420b5beebc4779c66749eca173a1f72bcbe5cb39b1
     home: https://github.com/bitnami-labs/sealed-secrets
     kubeVersion: '>=1.9.0-0'
     maintainers:
@@ -105,4 +127,4 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/sealed-secrets-1.10.3.tgz
     version: 1.10.3
-generated: "2020-10-12T21:42:30.392984421+05:45"
+generated: "2021-01-20T01:08:32.547929962+05:45"
