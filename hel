@@ -1,0 +1,8 @@
+repositories:
+  - name: test1
+    url: https://berrybytes.github.io/helm-chart-org
+
+releases:
+  - name: prometheus
+    chart: prometheus-community/prometheus-operator
+    namespace: monitor
