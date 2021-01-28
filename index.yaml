@@ -3,14 +3,14 @@ entries:
   argo:
   - apiVersion: v1
     appVersion: v2.11.3
-    created: "2021-01-27T17:04:17.136686119+05:45"
+    created: "2021-01-28T23:43:43.640266937+05:45"
     dependencies:
     - condition: minio.install
       name: minio
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 5.0.6
     description: A Helm chart for Argo Workflows
-    digest: 721f2dc52cbd0e4142f6d067d3b7e8a395c398acdf432da8c3988bae7d01697d
+    digest: 39d6ae129db0280f1e5e765501eddcff6f3952de474e6ee532ca88db28f970c5
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     maintainers:
@@ -24,10 +24,19 @@ entries:
     version: 0.13.0
   cert-manager:
   - apiVersion: v1
-    appVersion: v1.0.3
-    created: "2021-01-27T17:04:17.137578115+05:45"
+    appVersion: v0.9.1
+    created: "2021-01-28T23:43:43.646877405+05:45"
+    dependencies:
+    - condition: webhook.enabled
+      name: webhook
+      repository: file://webhook
+      version: v0.1.0
+    - condition: cainjector.enabled
+      name: cainjector
+      repository: file://cainjector
+      version: v0.1.0
     description: A Helm chart for cert-manager
-    digest: f17c6324bf6924a5e7319bb4623e4d866124f2e2d0faa5f1b7f9ceb98365b420
+    digest: 9de1c6bf8e30dc664e920476bba276482721520540ab6c244dd4f9dc21875bf6
     home: https://github.com/jetstack/cert-manager
     icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
     keywords:
@@ -42,14 +51,14 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://berrybytes.github.io/helm-chart-org/cert-manager-v1.0.3.tgz
-    version: v1.0.3
+    - https://berrybytes.github.io/helm-chart-org/cert-manager-v0.9.1.tgz
+    version: v0.9.1
   contour:
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2021-01-27T17:04:17.138699022+05:45"
+    created: "2021-01-28T23:43:43.67353289+05:45"
     description: A Helm chart for Kubernetes
-    digest: ec09fc68b7472c12161e1d1221516fd3631e4acdd8db234d4aa80658cfae62e1
+    digest: de813c38f3b3e8f0b479573f837996a188b965397945166fc284361a6defde62
     name: contour
     type: application
     urls:
@@ -58,7 +67,7 @@ entries:
   dns-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-01-27T17:04:17.149402324+05:45"
+    created: "2021-01-28T23:43:43.683820037+05:45"
     description: A Helm chart for Kubernetes
     digest: 8383ae5a7656b3208517e81a9336ed1b2c1200c8b7185f7109287452c76bc9c6
     name: dns-controller
@@ -69,7 +78,7 @@ entries:
   lb-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-01-27T17:04:17.151180228+05:45"
+    created: "2021-01-28T23:43:43.684816112+05:45"
     description: A Helm chart for Kubernetes
     digest: 385be0f35082a6ab29402b4f90c401f4f84e07a209f3646c6003d4c0e45018a6
     name: lb-controller
@@ -77,12 +86,45 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/lb-controller-0.1.0.tgz
     version: 0.1.0
+  prometheus-operator:
+  - apiVersion: v1
+    appVersion: 0.38.1
+    created: "2021-01-28T23:43:43.708741617+05:45"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    deprecated: true
+    description: DEPRECATED - This chart will be renamed. See https://github.com/prometheus-community/community/issues/28#issuecomment-670406329
+    digest: efe9decff707a4aca333cacafc82ac913c6ab917287f1376c7015ff1d5f36199
+    home: https://github.com/coreos/prometheus-operator
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    name: prometheus-operator
+    sources:
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/prometheus-operator-9.3.2.tgz
+    version: 9.3.2
   sealed-secrets:
   - apiVersion: v1
     appVersion: 0.12.4
-    created: "2021-01-27T17:04:17.15404811+05:45"
+    created: "2021-01-28T23:43:43.709800235+05:45"
     description: A Helm chart for Sealed Secrets
-    digest: d4d131a09a97e3f0237baac23fabe5e3687616223f566a381ed5fb8922f0d73c
+    digest: 7a614706e64ad33d505c589a17ab96a4165017bfd1dd287f016ae958033e46f0
     home: https://github.com/bitnami-labs/sealed-secrets
     kubeVersion: '>=1.9.0-0'
     maintainers:
@@ -94,4 +136,4 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/sealed-secrets-1.10.3.tgz
     version: 1.10.3
-generated: "2021-01-27T17:04:17.128482221+05:45"
+generated: "2021-01-28T23:43:43.44744746+05:45"
