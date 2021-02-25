@@ -3,14 +3,14 @@ entries:
   argo:
   - apiVersion: v1
     appVersion: v2.11.3
-    created: "2021-02-04T12:55:57.651259072+05:45"
+    created: "2021-02-25T15:19:37.999151194+05:45"
     dependencies:
     - condition: minio.install
       name: minio
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 5.0.6
     description: A Helm chart for Argo Workflows
-    digest: ef170b1783a847e2208b6fb0b72661140188c53e07434e458f36fbe64f7c7a71
+    digest: da52821abcdd536cc56686f59e3fee8923866478a544982d29093c22b2f5fbdf
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
     maintainers:
@@ -25,7 +25,7 @@ entries:
   cert-manager:
   - apiVersion: v1
     appVersion: v0.9.1
-    created: "2021-02-04T12:55:57.67004292+05:45"
+    created: "2021-02-25T15:19:38.011069496+05:45"
     dependencies:
     - condition: webhook.enabled
       name: webhook
@@ -56,7 +56,7 @@ entries:
   contour:
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2021-02-04T12:55:57.672463073+05:45"
+    created: "2021-02-25T15:19:38.012241269+05:45"
     description: A Helm chart for Kubernetes
     digest: de813c38f3b3e8f0b479573f837996a188b965397945166fc284361a6defde62
     name: contour
@@ -67,7 +67,7 @@ entries:
   dns-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-04T12:55:57.677115731+05:45"
+    created: "2021-02-25T15:19:38.014128129+05:45"
     description: A Helm chart for Kubernetes
     digest: 8383ae5a7656b3208517e81a9336ed1b2c1200c8b7185f7109287452c76bc9c6
     name: dns-controller
@@ -78,7 +78,7 @@ entries:
   lb-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-04T12:55:57.679647847+05:45"
+    created: "2021-02-25T15:19:38.015170248+05:45"
     description: A Helm chart for Kubernetes
     digest: 385be0f35082a6ab29402b4f90c401f4f84e07a209f3646c6003d4c0e45018a6
     name: lb-controller
@@ -89,7 +89,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2021-02-04T12:55:57.716152343+05:45"
+    created: "2021-02-25T15:19:38.052907654+05:45"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -122,7 +122,7 @@ entries:
   reloader:
   - apiVersion: v1
     appVersion: v0.0.79
-    created: "2021-02-04T12:55:57.716753881+05:45"
+    created: "2021-02-25T15:19:38.068189283+05:45"
     description: Reloader chart that runs on kubernetes
     digest: 95a9d6f9ef6111b883cc59359c332a4c5e3b3ceae0d2ff9e80029e2854b78498
     home: https://github.com/stakater/Reloader
@@ -156,7 +156,7 @@ entries:
   sealed-secrets:
   - apiVersion: v1
     appVersion: 0.12.4
-    created: "2021-02-04T12:55:57.720712642+05:45"
+    created: "2021-02-25T15:19:38.069703661+05:45"
     description: A Helm chart for Sealed Secrets
     digest: 7a614706e64ad33d505c589a17ab96a4165017bfd1dd287f016ae958033e46f0
     home: https://github.com/bitnami-labs/sealed-secrets
@@ -170,4 +170,29 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/sealed-secrets-1.10.3.tgz
     version: 1.10.3
-generated: "2021-02-04T12:55:57.631431452+05:45"
+  velero:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: "2021-02-25T15:19:38.071312921+05:45"
+    description: A Helm chart for velero
+    digest: c8f34e9e053d9a535d1d78e0e0486dbe23d2f2abc650e9ac67938866cd4a088f
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    maintainers:
+    - email: ashisham@vmware.com
+      name: ashish-amarnath
+    - email: carlisiac@vmware.com
+      name: carlisia
+    - email: ctadeu@gmail.com
+      name: cpanato
+    - email: brubakern@vmware.com
+      name: nrb
+    - email: krisss@vmware.com
+      name: skriss
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/velero-2.14.8.tgz
+    version: 2.14.8
+generated: "2021-02-25T15:19:37.985340998+05:45"
