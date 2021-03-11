@@ -3,7 +3,7 @@ entries:
   argo:
   - apiVersion: v1
     appVersion: v2.11.3
-    created: "2021-02-25T15:19:37.999151194+05:45"
+    created: "2021-03-11T13:18:49.511288652+05:45"
     dependencies:
     - condition: minio.install
       name: minio
@@ -25,7 +25,7 @@ entries:
   cert-manager:
   - apiVersion: v1
     appVersion: v0.9.1
-    created: "2021-02-25T15:19:38.011069496+05:45"
+    created: "2021-03-11T13:18:49.561527705+05:45"
     dependencies:
     - condition: webhook.enabled
       name: webhook
@@ -56,7 +56,7 @@ entries:
   contour:
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2021-02-25T15:19:38.012241269+05:45"
+    created: "2021-03-11T13:18:49.577932044+05:45"
     description: A Helm chart for Kubernetes
     digest: de813c38f3b3e8f0b479573f837996a188b965397945166fc284361a6defde62
     name: contour
@@ -67,7 +67,7 @@ entries:
   dns-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-25T15:19:38.014128129+05:45"
+    created: "2021-03-11T13:18:49.705656245+05:45"
     description: A Helm chart for Kubernetes
     digest: 8383ae5a7656b3208517e81a9336ed1b2c1200c8b7185f7109287452c76bc9c6
     name: dns-controller
@@ -78,7 +78,7 @@ entries:
   lb-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-25T15:19:38.015170248+05:45"
+    created: "2021-03-11T13:18:49.708383164+05:45"
     description: A Helm chart for Kubernetes
     digest: 385be0f35082a6ab29402b4f90c401f4f84e07a209f3646c6003d4c0e45018a6
     name: lb-controller
@@ -89,7 +89,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2021-02-25T15:19:38.052907654+05:45"
+    created: "2021-03-11T13:18:49.758996587+05:45"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -122,7 +122,7 @@ entries:
   reloader:
   - apiVersion: v1
     appVersion: v0.0.79
-    created: "2021-02-25T15:19:38.068189283+05:45"
+    created: "2021-03-11T13:18:49.779121247+05:45"
     description: Reloader chart that runs on kubernetes
     digest: 95a9d6f9ef6111b883cc59359c332a4c5e3b3ceae0d2ff9e80029e2854b78498
     home: https://github.com/stakater/Reloader
@@ -156,7 +156,7 @@ entries:
   sealed-secrets:
   - apiVersion: v1
     appVersion: 0.12.4
-    created: "2021-02-25T15:19:38.069703661+05:45"
+    created: "2021-03-11T13:18:49.780879099+05:45"
     description: A Helm chart for Sealed Secrets
     digest: 7a614706e64ad33d505c589a17ab96a4165017bfd1dd287f016ae958033e46f0
     home: https://github.com/bitnami-labs/sealed-secrets
@@ -170,12 +170,23 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/sealed-secrets-1.10.3.tgz
     version: 1.10.3
+  secret-patcher:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-03-11T13:18:49.781618307+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 6ef32ac00e570d353dc92463884c34a8546caaab66be6a428bc83c17ba9d0854
+    name: secret-patcher
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/secret-patcher-0.1.0.tgz
+    version: 0.1.0
   velero:
   - apiVersion: v1
     appVersion: 1.5.3
-    created: "2021-02-25T15:19:38.071312921+05:45"
+    created: "2021-03-11T13:18:49.783312269+05:45"
     description: A Helm chart for velero
-    digest: c8f34e9e053d9a535d1d78e0e0486dbe23d2f2abc650e9ac67938866cd4a088f
+    digest: f112fcaba28572aaa39da537d985653c1e46f52960fa4e96a2e3c1e4b418c394
     home: https://github.com/vmware-tanzu/velero
     icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
     maintainers:
@@ -195,4 +206,15 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/velero-2.14.8.tgz
     version: 2.14.8
-generated: "2021-02-25T15:19:37.985340998+05:45"
+  zerone-jobs:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-03-11T13:18:49.791292161+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 013fecc5b90abd63d20dc34238c6d4655fc303490dff6c18a3b0aaf7cc9c4d25
+    name: zerone-jobs
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/zerone-jobs-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-11T13:18:49.505457285+05:45"
