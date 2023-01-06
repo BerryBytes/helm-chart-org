@@ -20,7 +20,7 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.25/cert-manager-0.8.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v0.8.1/cert-manager-0.8.1.tgz
     version: v1.3.1
   contour:
   - apiVersion: v2
@@ -31,7 +31,7 @@ entries:
     name: contour
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/contour/v0.1.0/contour-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v0.1.1/contour-0.1.1.tgz
     version: 0.1.0
   dns-controller:
   - apiVersion: v2
