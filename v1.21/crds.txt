@@ -4,4 +4,4 @@ https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm.v1.21.crds.y
 https://berrybytes.github.io/helm-chart-org/packages/prometheus/v9.3.2/prometheus-operator.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.10.3/sealed-secrets.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/velero/v2.14.8/velero.crds.yaml
-https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton.crds.yam
+https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton.crds.yaml
