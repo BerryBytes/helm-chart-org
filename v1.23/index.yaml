@@ -1,27 +1,5 @@
 apiVersion: v1
 entries:
-  argo:
-  - apiVersion: v1
-    appVersion: v2.11.3
-    created: "2022-07-07T23:05:40.991078749+05:45"
-    dependencies:
-    - condition: minio.install
-      name: minio
-      repository: https://kubernetes-charts.storage.googleapis.com/
-      version: 5.0.6
-    description: A Helm chart for Argo Workflows
-    digest: b8f3c9360c9831c6ce396304368733bcf5f42078b937e5a39e6cbe43685e0ec4
-    home: https://github.com/argoproj/argo-helm
-    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
-    maintainers:
-    - name: alexec
-    - name: alexmt
-    - name: jessesuen
-    - name: benjaminws
-    name: argo
-    urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/argo-0.13.0.tgz
-    version: 0.13.0
   cert-manager:
   - apiVersion: v1
     appVersion: v1.3.1
@@ -42,7 +20,7 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/cert-manager-v1.3.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v0.8.1/cert-manager-0.8.1.tgz
     version: v1.3.1
   contour:
   - apiVersion: v2
@@ -53,7 +31,7 @@ entries:
     name: contour
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/contour-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v0.1.1/contour-0.1.1.tgz
     version: 0.1.0
   dns-controller:
   - apiVersion: v2
@@ -64,7 +42,7 @@ entries:
     name: dns-controller
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.22/dns-controller-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/dns-controller/v0.1.0/dns-controller-0.1.0.tgz
     version: 0.1.0
   lb-controller:
   - apiVersion: v2
@@ -75,7 +53,7 @@ entries:
     name: lb-controller
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/lb-controller-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/lb-controller/v0.1.0/lb-controller-0.1.0.tgz
     version: 0.1.0
   olm:
   - apiVersion: v2
@@ -86,7 +64,7 @@ entries:
     name: olm
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/olm-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm-0.1.0.tgz
     version: 0.1.0
   prometheus-operator:
   - apiVersion: v1
@@ -119,7 +97,7 @@ entries:
     - https://github.com/coreos/prometheus-operator
     - https://coreos.com/operators/prometheus
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/prometheus-operator-9.3.2.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/prometheus/v8.1.3/kube-prometheus-8.1.3.tgz
     version: 9.3.2
   reloader:
   - apiVersion: v1
@@ -153,7 +131,7 @@ entries:
     sources:
     - https://github.com/stakater/IngressMonitorController
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/reloader-v0.0.79.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/reloader/v0.0.79/reloader-v0.0.79.tgz
     version: v0.0.79
   sealed-secrets:
   - apiVersion: v1
@@ -170,7 +148,7 @@ entries:
       name: olib963
     name: sealed-secrets
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/sealed-secrets-1.10.3.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.1.2/sealed-secrets-1.1.2.tgz
     version: 1.10.3
   secret-patcher:
   - apiVersion: v2
@@ -181,7 +159,7 @@ entries:
     name: secret-patcher
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/secret-patcher-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/secret-patcher/v0.1.0/secret-patcher-0.1.0.tgz
     version: 0.1.0
   tekton:
   - apiVersion: v2
@@ -192,7 +170,7 @@ entries:
     name: tekton
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/tekton-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton-0.1.0.tgz
     version: 0.1.0
   velero:
   - apiVersion: v1
@@ -217,7 +195,7 @@ entries:
     sources:
     - https://github.com/vmware-tanzu/velero
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/velero-2.14.8.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/velero/v2.32.3/velero-2.32.3.tgz
     version: 2.14.8
   zerone-jobs:
   - apiVersion: v2
@@ -228,6 +206,6 @@ entries:
     name: zerone-jobs
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/v1.21/zerone-jobs-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/zerone-jobs/v0.1.0/zerone-jobs-0.1.0.tgz
     version: 0.1.0
 generated: "2022-07-07T23:05:40.956870927+05:45"
