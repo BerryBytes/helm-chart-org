@@ -5,3 +5,4 @@ https://berrybytes.github.io/helm-chart-org/packages/prometheus/v8.1.3/prometheu
 https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.1.2/sealed-secrets.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/velero/v2.32.3/velero.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton.crds.yaml
+https://berrybytes.github.io/helm-chart-org/packages/external-secrets/v0.7.2/external-secrets.crds.yaml

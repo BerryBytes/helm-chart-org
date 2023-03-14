@@ -230,4 +230,21 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/v1.21/zerone-jobs-0.1.0.tgz
     version: 0.1.0
+  external-secrets:
+  - apiVersion: v2
+    appVersion: v0.7.2
+    created: "2023-03-13T16:47:13.771076751+05:45"
+    description: External secret management for Kubernetes
+    digest: b98f9547e7d37c8f1d6417e776bc9f99084da1c60b8ce1eef62123524dda1278
+    home: https://github.com/external-secrets/external-secrets
+    icon: https://raw.githubusercontent.com/external-secrets/external-secrets/main/assets/eso-logo-large.png
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    kubeVersion: '>= 1.19.0-0'
+    name: external-secrets
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/external-secrets/v0.7.2/external-secrets-0.7.2.tgz
+    version: 0.7.2
 generated: "2022-07-07T23:05:40.956870927+05:45"
