@@ -31,7 +31,7 @@ entries:
     name: contour
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/contour/v0.1.1/contour-0.1.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v10.2.2/contour-10.2.2.tgz
     version: 0.1.0
   dns-controller:
   - apiVersion: v2
