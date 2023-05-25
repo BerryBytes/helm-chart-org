@@ -195,8 +195,8 @@ entries:
     sources:
     - https://github.com/vmware-tanzu/velero
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/velero/v2.32.3/velero-2.32.3.tgz
-    version: 2.14.8
+    - https://berrybytes.github.io/helm-chart-org/packages/velero/v4.0.2/velero-4.0.2.tgz
+    version: 4.0.2
   zerone-jobs:
   - apiVersion: v2
     appVersion: 1.16.0
