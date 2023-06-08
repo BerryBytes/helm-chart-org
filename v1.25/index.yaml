@@ -20,7 +20,7 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v0.8.1/cert-manager-0.8.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.12.1/cert-manager-1.12.1.tgz
     version: v1.3.1
   contour:
   - apiVersion: v2
