@@ -42,8 +42,8 @@ entries:
     name: dns-controller
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/dns-controller/v0.1.0/dns-controller-0.1.0.tgz
-    version: 0.1.0
+    - https://berrybytes.github.io/helm-chart-org/packages/dns-controller/v1.0.0/dns-controller-1.0.0.tgz
+    version: 1.0.0
   lb-controller:
   - apiVersion: v2
     appVersion: 1.16.0
