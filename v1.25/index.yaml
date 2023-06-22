@@ -170,7 +170,7 @@ entries:
     name: tekton
     type: application
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.47.0/tekton-0.47.0.tgz
     version: 0.1.0
   velero:
   - apiVersion: v1
