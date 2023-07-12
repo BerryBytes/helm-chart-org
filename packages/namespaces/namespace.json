@@ -13,6 +13,6 @@
     "velero":               "velero",
     "olm":                  "olm",
     "secret-patcher":       "zerone-secret-patcher",
-    "external-secret":      "zerone-external-secret",
+    "external-secrets":      "zerone-external-secret",
     "external-logging":     "zerone-external-logging"
 }
