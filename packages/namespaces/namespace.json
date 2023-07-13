@@ -1,0 +1,18 @@
+{
+    "sealed-secret":        "zerone-sealed-secrets",
+    "cert-manager":         "zerone-cert-manager",
+    "tekton":               "tekton-pipelines",
+    "contour":              "zerone-projectcontour",
+    "prometheus":           "zerone-monitoring",
+    "lb-controller":        "zerone-lb-controller",
+    "dns-controller":       "zerone-dns-controller",
+    "tekton-controller":    "tekton-pipelines",
+    "image-del-controller": "zerone-image-del-controller",
+    "zerone-jobs":          "zerone-jobs",
+    "reloader":             "zerone-reloader",
+    "velero":               "velero",
+    "olm":                  "olm",
+    "secret-patcher":       "zerone-secret-patcher",
+    "external-secrets":      "zerone-external-secret",
+    "external-logging":     "zerone-external-logging"
+}
