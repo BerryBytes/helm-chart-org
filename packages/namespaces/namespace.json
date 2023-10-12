@@ -4,6 +4,7 @@
     "tekton":               "tekton-pipelines",
     "contour":              "zerone-projectcontour",
     "prometheus":           "zerone-monitoring",
+    "prometheus-operator":  "zerone-monitoring",
     "lb-controller":        "zerone-lb-controller",
     "dns-controller":       "zerone-dns-controller",
     "tekton-controller":    "tekton-pipelines",
@@ -14,5 +15,6 @@
     "olm":                  "olm",
     "secret-patcher":       "zerone-secret-patcher",
     "external-secrets":      "zerone-external-secret",
-    "external-logging":     "zerone-external-logging"
+    "external-logging":     "zerone-external-logging",
+    "flagger":              "zerone-flagger"
 }
