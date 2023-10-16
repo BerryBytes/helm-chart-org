@@ -249,10 +249,10 @@ entries:
     version: 0.7.2
   flagger:
   - apiVersion: v1
-    appVersion: 1.33.0
-    created: "2023-10-11T10:00:42.234018822+05:45"
+    appVersion: 1.24.1
+    created: "2023-10-16T16:46:42.998917027+05:45"
     description: Flagger is a progressive delivery operator for Kubernetes
-    digest: cf3f83f0c462eacb140e6b91d63c93456d44be02e7a69dbb4c12eeab8e9aa2bc
+    digest: 32851c30cc14b1bace519660bbe227463ab585f8d09a57daca3d5243aec8093e
     home: https://flagger.app
     icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
     keywords:
@@ -278,6 +278,6 @@ entries:
     sources:
     - https://github.com/fluxcd/flagger
     urls:
-    - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.33.0/flagger-1.33.0.tgz
-    version: 1.33.0
+    - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger-1.24.1.tgz
+    version: 1.24.1
 generated: "2022-07-07T23:05:40.956870927+05:45"
