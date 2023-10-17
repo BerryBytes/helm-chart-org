@@ -242,4 +242,37 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/packages/external-logging/v3.17.10/external-logging-3.17.10.tgz
     version: 3.17.10
+  flagger:
+  - apiVersion: v1
+    appVersion: 1.24.1
+    created: "2023-10-16T16:46:42.998917027+05:45"
+    description: Flagger is a progressive delivery operator for Kubernetes
+    digest: 32851c30cc14b1bace519660bbe227463ab585f8d09a57daca3d5243aec8093e
+    home: https://flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    keywords:
+    - flagger
+    - istio
+    - appmesh
+    - linkerd
+    - kuma
+    - osm
+    - smi
+    - gloo
+    - contour
+    - nginx
+    - traefik
+    - gitops
+    - canary
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: flagger
+    sources:
+    - https://github.com/fluxcd/flagger
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger-1.24.1.tgz
+    version: 1.24.1
 generated: "2022-07-07T23:05:40.956870927+05:45"
