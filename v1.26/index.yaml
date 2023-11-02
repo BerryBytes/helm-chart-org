@@ -275,4 +275,66 @@ entries:
     urls:
     - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger-1.24.1.tgz
     version: 1.24.1
+  openebs:
+  - apiVersion: v2
+    appVersion: 3.9.0
+    created: "2023-10-30T15:05:48.348375999+05:45"
+    dependencies:
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: https://openebs.github.io/node-disk-manager
+      version: 2.1.0
+    - condition: localpv-provisioner.enabled
+      name: localpv-provisioner
+      repository: https://openebs.github.io/dynamic-localpv-provisioner
+      version: 3.4.1
+    - condition: cstor.enabled
+      name: cstor
+      repository: https://openebs.github.io/cstor-operators
+      version: 3.5.0
+    - condition: jiva.enabled
+      name: jiva
+      repository: https://openebs.github.io/jiva-operator
+      version: 3.5.1
+    - condition: zfs-localpv.enabled
+      name: zfs-localpv
+      repository: https://openebs.github.io/zfs-localpv
+      version: 2.3.1
+    - condition: lvm-localpv.enabled
+      name: lvm-localpv
+      repository: https://openebs.github.io/lvm-localpv
+      version: 1.3.0
+    - condition: nfs-provisioner.enabled
+      name: nfs-provisioner
+      repository: https://openebs.github.io/dynamic-nfs-provisioner
+      version: 0.10.0
+    - condition: mayastor.enabled
+      name: mayastor
+      repository: https://openebs.github.io/mayastor-extensions
+      version: 2.4.0
+    description: Containerized Attached Storage for Kubernetes
+    digest: 315f7b5cd7cd3c3b4a5dd873468a3538e499a6aec7512f834e78c9f76a0c7ace
+    home: http://www.openebs.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/HEAD/projects/openebs/icon/color/openebs-icon-color.png
+    keywords:
+    - cloud-native-storage
+    - block-storage
+    - local-storage
+    - iSCSI
+    - NVMe
+    - storage
+    - kubernetes
+    maintainers:
+    - email: kiran.mova@mayadata.io
+      name: kmova
+    - email: prateek.pandey@mayadata.io
+      name: prateekpandey14
+    - email: shovan.maity@mayadata.io
+      name: shovanmaity
+    name: openebs
+    sources:
+    - https://github.com/openebs/openebs
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/openebs/v3.9.0/openebs-3.9.0.tgz
+    version: 3.9.0  
 generated: "2022-07-07T23:05:40.956870927+05:45"
