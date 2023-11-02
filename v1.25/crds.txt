@@ -8,3 +8,4 @@ https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.47.0/tekton.crds.
 https://berrybytes.github.io/helm-chart-org/packages/external-secrets/v0.7.2/external-secrets.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/external-logging/v3.17.10/external-logging-crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger.crds.yaml
+https://helm-chart.bibekpokhrel42.com.np/packages/openebs/v3.9.0/openebs-crds.yaml
