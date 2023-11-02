@@ -16,5 +16,6 @@
     "secret-patcher":       "zerone-secret-patcher",
     "external-secrets":      "zerone-external-secret",
     "external-logging":     "zerone-external-logging",
-    "flagger":              "zerone-flagger"
+    "flagger":              "zerone-flagger",
+    "openebs":              "zerone-openebs"
 }
