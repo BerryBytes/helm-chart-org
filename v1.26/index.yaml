@@ -23,47 +23,34 @@ entries:
     - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.12.1/cert-manager-1.12.1.tgz
     version: v1.3.1
   contour:
-  - apiVersion: v1
-  entries:
-    contour:
-    - annotations:
-        category: Infrastructure
-        images: |
-          - name: contour
-            image: docker.io/bitnami/contour:1.29.1-debian-12-r3
-          - name: envoy
-            image: docker.io/bitnami/envoy:1.29.7-debian-12-r0
-          - name: nginx
-            image: docker.io/bitnami/nginx:1.27.0-debian-12-r3
-        licenses: Apache-2.0
-      apiVersion: v2
-      appVersion: 1.29.1
-      created: "2024-08-09T13:32:47.394892812+05:45"
-      dependencies:
-      - name: common
-        repository: oci://registry-1.docker.io/bitnamicharts
-        tags:
-        - bitnami-common
-        version: 2.x.x
-      description: Contour is an open source Kubernetes ingress controller that works
-        by deploying the Envoy proxy as a reverse proxy and load balancer.
-      digest: f328e827a46579a68f109ed4e542ed5134893bfdba1a7c8f52437a5384da10f6
-      home: https://bitnami.com
-      icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
-      keywords:
-      - ingress
-      - envoy
-      - contour
-      maintainers:
-      - name: Broadcom, Inc. All Rights Reserved.
-        url: https://github.com/bitnami/charts
-      name: contour
-      sources:
-      - https://github.com/bitnami/charts/tree/main/bitnami/contour
-      urls:
-      - https://berrybytes.github.io/helm-chart-org/packages/contour/v10.2.2/contour-10.2.2.tgz
-      version: 18.2.9
-    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.29.1
+    created: "2024-08-12T09:55:23.323285394+05:45"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: f328e827a46579a68f109ed4e542ed5134893bfdba1a7c8f52437a5384da10f6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: contour
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/contour
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v18.2.9/contour-18.2.9.tgz
+    version: 18.2.9
+  
   dns-controller:
   - apiVersion: v2
     appVersion: 1.16.0
