@@ -1,5 +1,5 @@
 https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.12.1/cert-manager.crds.yaml
-https://berrybytes.github.io/helm-chart-org/packages/contour/v18.2.9/contour.crds.yaml
+https://berrybytes.github.io/helm-chart-org/packages/contour/v12.0.0/contour.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/prometheus/v24.5.0/prometheus-operator.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.1.2/sealed-secrets.crds.yaml
