@@ -49,7 +49,7 @@ entries:
     - https://github.com/bitnami/charts/tree/main/bitnami/contour
     urls:
     - https://berrybytes.github.io/helm-chart-org/packages/contour/v12.0.0/contour-12.0.0.tgz
-    version: 18.2.9
+    version: 12.0.0
   
   dns-controller:
   - apiVersion: v2
