@@ -1,4 +1,4 @@
-https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.12.1/cert-manager.crds.yaml
+http://127.0.0.1:8000/packages/cert-manager/v1.18.2/cert-manager.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/contour/v12.6.4/contour.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm.crds.yaml
 https://berrybytes.github.io/helm-chart-org/packages/prometheus/v24.5.0/prometheus-operator.crds.yaml
