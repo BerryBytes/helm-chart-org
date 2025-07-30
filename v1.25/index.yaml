@@ -20,8 +20,8 @@ entries:
     sources:
     - https://github.com/cert-manager/cert-manager
     urls:
-    - http://127.0.0.1:8000/packages/cert-manager/v1.18.2/cert-manager-v1.18.2.tgz
-    version: v1.18.2
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.18.2/cert-manager-1.18.2.tgz
+    version: v1.3.1
   contour:
   - apiVersion: v2
     appVersion: 1.29.1
