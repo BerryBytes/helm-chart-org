@@ -1,27 +1,36 @@
 apiVersion: v1
 entries:
   cert-manager:
-  - apiVersion: v1
-    appVersion: v1.3.1
-    created: "2022-07-07T23:05:41.040596236+05:45"
+  - annotations:
+      artifacthub.io/category: security
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v2
+    appVersion: v1.18.2
+    created: "2025-07-31T16:22:05.533815523+05:45"
     description: A Helm chart for cert-manager
-    digest: 1cdbd9ca57811061db6a3e3612a30dd2be2f0f8b980e67dad56a8551082a5b7c
-    home: https://github.com/jetstack/cert-manager
-    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    digest: a871846285a50400f9921b8fa65c65814b202face5351c8be0d588b8d7c28e05
+    home: https://cert-manager.io
+    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
     keywords:
     - cert-manager
     - kube-lego
     - letsencrypt
     - tls
+    kubeVersion: '>= 1.22.0-0'
     maintainers:
-    - email: james@jetstack.io
-      name: munnerz
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
     name: cert-manager
     sources:
-    - https://github.com/jetstack/cert-manager
+    - https://github.com/cert-manager/cert-manager
     urls:
     - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.18.2/cert-manager-v1.18.2.tgz
-    version: v1.3.1
+    version: v1.18.2
   contour:
   - apiVersion: v2
     appVersion: 1.29.1
