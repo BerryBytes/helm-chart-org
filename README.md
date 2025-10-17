@@ -1,10 +1,10 @@
-# 📦 Helm Chart Organization
+# Helm Chart Organization
 
 **Helm Chart Organization** is a curated, versioned collection of Helm charts and Custom Resource Definitions (CRDs) for Kubernetes, organized for GitOps workflows and CI/CD pipelines. This repository serves as the canonical source of charts and CRDs consumed by [01cloud-development](https://github.com/BerryBytes/01cloud-development/) for bootstrapping and upgrading Kubernetes environments.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Available Packages](#available-packages)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧐 Overview
+## Overview
 
 This repository provides a **Git-friendly layout** for managing Helm charts and CRDs with the following benefits:
 
@@ -25,8 +25,7 @@ This repository provides a **Git-friendly layout** for managing Helm charts and 
 - **GitOps Ready**: Designed for consumption by automation tools and CI/CD pipelines
 - **Kubernetes Compatibility**: Organized by Kubernetes version for compatibility assurance
 
-### 🎯 Purpose
-
+### Purpose
 - Provide pinned/upstream chart versions and CRDs in a Git-friendly layout for GitOps, CI pipelines, and offline installs
 - Serve as the canonical source of charts/CRDs consumed by **01cloud-development** when bootstrapping and upgrading environments
 - Enable reproducible deployments with exact chart content reviewed and stored in Git
@@ -42,7 +41,7 @@ This repository provides a **Git-friendly layout** for managing Helm charts and 
 
 ---
 
-## 📦 Available Packages
+## Available Packages
 
 The repository contains the following charts:
 
@@ -64,7 +63,7 @@ The repository contains the following charts:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -98,7 +97,7 @@ kubectl apply -f packages/prometheus/v24.5.0/prometheus-operator.crds.yaml
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Integration with 01cloud-development
 
@@ -111,7 +110,7 @@ During deployment to a Kubernetes cluster, **01cloud-development** performs the 
 
 ---
 
-## 🎯 Deployment Guidelines
+## Deployment Guidelines
 
 ### Recommended Deployment Order
 
@@ -135,7 +134,7 @@ Default namespaces are defined in `packages/namespaces/namespace.json`:
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### For Maintainers
 
@@ -169,13 +168,13 @@ Default namespaces are defined in `packages/namespaces/namespace.json`:
 
 ---
 
-## 🔗 Repository Hosting
+## Repository Hosting
 
 Charts are served from GitHub Pages at `https://berrybytes.github.io/helm-chart-org/` with direct links to packaged charts and CRDs in the repository structure.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Interested in contributing? Please follow these guidelines:
 
@@ -186,7 +185,7 @@ Interested in contributing? Please follow these guidelines:
 
 ---
 
-## 🎉 Credits
+## Credits
 
 Special thanks to [Berrybytes](https://www.berrybytes.com) for maintaining this project and enabling seamless Kubernetes deployments!
 
