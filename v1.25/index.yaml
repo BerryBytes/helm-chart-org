@@ -1,0 +1,366 @@
+apiVersion: v1
+entries:
+  cert-manager:
+  - annotations:
+      artifacthub.io/category: security
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v2
+    appVersion: v1.18.2
+    created: "2025-07-31T16:22:05.533815523+05:45"
+    description: A Helm chart for cert-manager
+    digest: a871846285a50400f9921b8fa65c65814b202face5351c8be0d588b8d7c28e05
+    home: https://cert-manager.io
+    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.22.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.18.2/cert-manager-v1.18.2.tgz
+    version: v1.18.2
+  contour:
+  - apiVersion: v2
+    appVersion: 1.29.1
+    created: "2024-08-12T09:55:23.323285394+05:45"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: f328e827a46579a68f109ed4e542ed5134893bfdba1a7c8f52437a5384da10f6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: contour
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/contour
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v12.6.4/contour-12.6.4.tgz
+    version: 12.0.0
+  dns-controller:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.044639449+05:45"
+    description: A Helm chart for Kubernetes
+    digest: abb475d09bbf2a1b32cdd98215b323a812ba69dc8b997f39f77b9f931bcf1a47
+    name: dns-controller
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/dns-controller/v1.0.0/dns-controller-1.0.0.tgz
+    version: 1.0.0
+  lb-controller:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.046421443+05:45"
+    description: A Helm chart for Kubernetes
+    digest: bad81973985cf613f6412fdf78c33ebdc883a71f563ff8d0d81c54f630261388
+    name: lb-controller
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/lb-controller/v0.1.0/lb-controller-0.1.0.tgz
+    version: 0.1.0
+  olm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.047883301+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 19ab6c2e7adecb5a8e95616c2fc42e79f2458046b8a1ee5bacc6c90c2c3c771b
+    name: olm
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm-0.1.0.tgz
+    version: 0.1.0
+  prometheus-operator:
+  - apiVersion: v1
+    appVersion: 0.38.1
+    created: "2022-07-07T23:05:41.193049628+05:45"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.10.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.3.*
+    deprecated: true
+    description: DEPRECATED - This chart will be renamed. See https://github.com/prometheus-community/community/issues/28#issuecomment-670406329
+    digest: 6632e16bc63a01d6b31d46f9fa82e79bce577bfdda2fb26e570711c3bfa50b7e
+    home: https://github.com/coreos/prometheus-operator
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    name: prometheus-operator
+    sources:
+    - https://github.com/coreos/kube-prometheus
+    - https://github.com/coreos/prometheus-operator
+    - https://coreos.com/operators/prometheus
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/prometheus/v24.5.0/prometheus-24.5.0.tgz
+    version: 9.3.2
+  reloader:
+  - apiVersion: v1
+    appVersion: v0.0.79
+    created: "2022-07-07T23:05:41.2251833+05:45"
+    description: Reloader chart that runs on kubernetes
+    digest: 95a9d6f9ef6111b883cc59359c332a4c5e3b3ceae0d2ff9e80029e2854b78498
+    home: https://github.com/stakater/Reloader
+    icon: https://raw.githubusercontent.com/stakater/Reloader/master/assets/web/reloader-round-100px.png
+    keywords:
+    - Reloader
+    - kubernetes
+    maintainers:
+    - email: hello@stakater.com
+      name: Stakater
+    - email: rasheed@aurorasolutions.io
+      name: rasheedamir
+    - email: waseemhassan@stakater.com
+      name: waseem-h
+    - email: faizan.ahmad55@outlook.com
+      name: faizanahmad055
+    - email: ali.kahoot@aurorasolutions.io
+      name: kahootali
+    - email: ahmad@aurorasolutions.io
+      name: ahmadiq
+    - email: ahsanmuhammad1@outlook.com
+      name: ahsan-storm
+    - email: waleed@stakater.com
+      name: ahmedwaleedmalik
+    name: reloader
+    sources:
+    - https://github.com/stakater/IngressMonitorController
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/reloader/v0.0.79/reloader-v0.0.79.tgz
+    version: v0.0.79
+  sealed-secrets:
+  - apiVersion: v1
+    appVersion: 0.12.4
+    created: "2022-07-07T23:05:41.226961235+05:45"
+    description: A Helm chart for Sealed Secrets
+    digest: 7a614706e64ad33d505c589a17ab96a4165017bfd1dd287f016ae958033e46f0
+    home: https://github.com/bitnami-labs/sealed-secrets
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: stefan.prodan@gmail.com
+      name: stefanprodan
+    - email: olib963@gmail.com
+      name: olib963
+    name: sealed-secrets
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.1.2/sealed-secrets-1.1.2.tgz
+    version: 1.10.3
+  secret-patcher:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.228314801+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 691e9d00fa02e6999ba517ed84b086294157944538523f523f9b8940e020b474
+    name: secret-patcher
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/secret-patcher/v0.1.0/secret-patcher-0.1.0.tgz
+    version: 0.1.0
+  tekton:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.230980854+05:45"
+    description: A Helm chart for Kubernetes
+    digest: c6606698e904e04e46671709af01161e06008ff228ad2ce392968b8f00705c41
+    name: tekton
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.47.0/tekton-0.47.0.tgz
+    version: 0.1.0
+  velero:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: "2022-07-07T23:05:41.257865191+05:45"
+    description: A Helm chart for velero
+    digest: 2b0926250961977e87ee09a85bb91fa261dc9dd0444358fbae5f0b5e26f5dfaa
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    maintainers:
+    - email: ashisham@vmware.com
+      name: ashish-amarnath
+    - email: carlisiac@vmware.com
+      name: carlisia
+    - email: ctadeu@gmail.com
+      name: cpanato
+    - email: brubakern@vmware.com
+      name: nrb
+    - email: krisss@vmware.com
+      name: skriss
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/velero/v5.1.0/velero-5.1.0.tgz
+    version: 5.1.0
+  zerone-jobs:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T23:05:41.359746783+05:45"
+    description: A Helm chart for Kubernetes
+    digest: 917b242d32426c6b44a7ead17bcb28dd875b5f15a76bc567a46152e9196cd8f5
+    name: zerone-jobs
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/zerone-jobs/v0.1.0/zerone-jobs-0.1.0.tgz
+    version: 0.1.0
+  external-secrets:
+  - apiVersion: v2
+    appVersion: v0.7.2
+    created: "2023-03-13T16:47:13.771076751+05:45"
+    description: External secret management for Kubernetes
+    digest: b98f9547e7d37c8f1d6417e776bc9f99084da1c60b8ce1eef62123524dda1278
+    home: https://github.com/external-secrets/external-secrets
+    icon: https://raw.githubusercontent.com/external-secrets/external-secrets/main/assets/eso-logo-large.png
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    kubeVersion: '>= 1.19.0-0'
+    name: external-secrets
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/external-secrets/v0.7.2/external-secrets-0.7.2.tgz
+    version: 0.7.2
+  external-logging:
+  - apiVersion: v2
+    appVersion: v3.17.10
+    created: "2023-03-13T16:47:13.771076751+05:45"
+    description: External Logger for kubernetes
+    digest: b98f9547e7d37c8f1d6417e776bc9f99084da1c60b8ce1eef62123524dda1278
+    home: https://github.com/external-logging/external-logging
+    icon: https://raw.githubusercontent.com/external-logging/external-logging/main/assets/eso-logo-large.png
+    keywords:
+    - kubernetes-external-logging
+    - logging
+    kubeVersion: '>= 1.19.0-0'
+    name: external-logging
+    type: application
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/external-logging/v3.17.10/external-logging-3.17.10.tgz
+    version: 3.17.10
+  flagger:
+  - apiVersion: v1
+    appVersion: 1.24.1
+    created: "2023-10-16T16:46:42.998917027+05:45"
+    description: Flagger is a progressive delivery operator for Kubernetes
+    digest: 32851c30cc14b1bace519660bbe227463ab585f8d09a57daca3d5243aec8093e
+    home: https://flagger.app
+    icon: https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon.png
+    keywords:
+    - flagger
+    - istio
+    - appmesh
+    - linkerd
+    - kuma
+    - osm
+    - smi
+    - gloo
+    - contour
+    - nginx
+    - traefik
+    - gitops
+    - canary
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: stefanprodan@users.noreply.github.com
+      name: stefanprodan
+      url: https://github.com/stefanprodan
+    name: flagger
+    sources:
+    - https://github.com/fluxcd/flagger
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger-1.24.1.tgz
+    version: 1.24.1
+  openebs:
+  - apiVersion: v2
+    appVersion: 3.9.0
+    created: "2023-10-30T15:05:48.348375999+05:45"
+    dependencies:
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: https://openebs.github.io/node-disk-manager
+      version: 2.1.0
+    - condition: localpv-provisioner.enabled
+      name: localpv-provisioner
+      repository: https://openebs.github.io/dynamic-localpv-provisioner
+      version: 3.4.1
+    - condition: cstor.enabled
+      name: cstor
+      repository: https://openebs.github.io/cstor-operators
+      version: 3.5.0
+    - condition: jiva.enabled
+      name: jiva
+      repository: https://openebs.github.io/jiva-operator
+      version: 3.5.1
+    - condition: zfs-localpv.enabled
+      name: zfs-localpv
+      repository: https://openebs.github.io/zfs-localpv
+      version: 2.3.1
+    - condition: lvm-localpv.enabled
+      name: lvm-localpv
+      repository: https://openebs.github.io/lvm-localpv
+      version: 1.3.0
+    - condition: nfs-provisioner.enabled
+      name: nfs-provisioner
+      repository: https://openebs.github.io/dynamic-nfs-provisioner
+      version: 0.10.0
+    - condition: mayastor.enabled
+      name: mayastor
+      repository: https://openebs.github.io/mayastor-extensions
+      version: 2.4.0
+    description: Containerized Attached Storage for Kubernetes
+    digest: 315f7b5cd7cd3c3b4a5dd873468a3538e499a6aec7512f834e78c9f76a0c7ace
+    home: http://www.openebs.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/HEAD/projects/openebs/icon/color/openebs-icon-color.png
+    keywords:
+    - cloud-native-storage
+    - block-storage
+    - local-storage
+    - iSCSI
+    - NVMe
+    - storage
+    - kubernetes
+    maintainers:
+    - email: kiran.mova@mayadata.io
+      name: kmova
+    - email: prateek.pandey@mayadata.io
+      name: prateekpandey14
+    - email: shovan.maity@mayadata.io
+      name: shovanmaity
+    name: openebs
+    sources:
+    - https://github.com/openebs/openebs
+    urls:
+    - https://berrybytes.github.io/helm-chart-org/packages/openebs/v3.9.0/openebs-3.9.0.tgz
+    version: 3.9.0  
+generated: "2022-07-07T23:05:40.956870927+05:45"
