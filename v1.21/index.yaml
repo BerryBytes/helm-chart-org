@@ -20,7 +20,7 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/cert-manager/v1.3.1/cert-manager-v1.3.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/cert-manager/v1.3.1/cert-manager-v1.3.1.tgz
     version: v1.3.1
   contour:
   - apiVersion: v2
@@ -31,7 +31,7 @@ entries:
     name: contour
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/contour/v0.1.0/contour-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/contour/v0.1.0/contour-0.1.0.tgz
     version: 0.1.0
   dns-controller:
   - apiVersion: v2
@@ -42,7 +42,7 @@ entries:
     name: dns-controller
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/dns-controller/v1.0.0/dns-controller-1.0.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/dns-controller/v1.0.0/dns-controller-1.0.0.tgz
     version: 1.0.0
   lb-controller:
   - apiVersion: v2
@@ -53,7 +53,7 @@ entries:
     name: lb-controller
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/lb-controller/v0.1.0/lb-controller-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/lb-controller/v0.1.0/lb-controller-0.1.0.tgz
     version: 0.1.0
   olm:
   - apiVersion: v2
@@ -64,7 +64,7 @@ entries:
     name: olm
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/olm/v0.1.0/olm-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/olm/v0.1.0/olm-0.1.0.tgz
     version: 0.1.0
   prometheus-operator:
   - apiVersion: v1
@@ -97,7 +97,7 @@ entries:
     - https://github.com/coreos/prometheus-operator
     - https://coreos.com/operators/prometheus
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/prometheus/v9.3.2/prometheus-operator-9.3.2.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/prometheus/v9.3.2/prometheus-operator-9.3.2.tgz
     version: 9.3.2
   reloader:
   - apiVersion: v1
@@ -131,7 +131,7 @@ entries:
     sources:
     - https://github.com/stakater/IngressMonitorController
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/reloader/v0.0.79/reloader-v0.0.79.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/reloader/v0.0.79/reloader-v0.0.79.tgz
     version: v0.0.79
   sealed-secrets:
   - apiVersion: v1
@@ -148,7 +148,7 @@ entries:
       name: olib963
     name: sealed-secrets
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/sealed-secrets/v1.10.3/sealed-secrets-1.10.3.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/sealed-secrets/v1.10.3/sealed-secrets-1.10.3.tgz
     version: 1.10.3
   secret-patcher:
   - apiVersion: v2
@@ -159,7 +159,7 @@ entries:
     name: secret-patcher
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/secret-patcher/v0.1.0/secret-patcher-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/secret-patcher/v0.1.0/secret-patcher-0.1.0.tgz
     version: 0.1.0
   tekton:
   - apiVersion: v2
@@ -170,7 +170,7 @@ entries:
     name: tekton
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/tekton/v0.1.0/tekton-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/tekton/v0.1.0/tekton-0.1.0.tgz
     version: 0.1.0
   velero:
   - apiVersion: v1
@@ -195,7 +195,7 @@ entries:
     sources:
     - https://github.com/vmware-tanzu/velero
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/velero/v2.14.8/velero-2.14.8.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/velero/v2.14.8/velero-2.14.8.tgz
     version: 2.14.8
   zerone-jobs:
   - apiVersion: v2
@@ -206,7 +206,7 @@ entries:
     name: zerone-jobs
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/zerone-jobs/v0.1.0/zerone-jobs-0.1.0.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/zerone-jobs/v0.1.0/zerone-jobs-0.1.0.tgz
     version: 0.1.0
   external-secrets:
   - apiVersion: v2
@@ -223,7 +223,7 @@ entries:
     name: external-secrets
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/external-secrets/v0.7.2/external-secrets-0.7.2.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/external-secrets/v0.7.2/external-secrets-0.7.2.tgz
     version: 0.7.2
   external-logging:
   - apiVersion: v2
@@ -240,7 +240,7 @@ entries:
     name: external-logging
     type: application
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/external-logging/v3.17.10/external-logging-3.17.10.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/external-logging/v3.17.10/external-logging-3.17.10.tgz
     version: 3.17.10
   flagger:
   - apiVersion: v1
@@ -273,6 +273,6 @@ entries:
     sources:
     - https://github.com/fluxcd/flagger
     urls:
-    - https://github.com/BerryBytes/helm-chart-org/blob/fix/ashutosh/crd-link/packages/flagger/v1.24.1/flagger-1.24.1.tgz
+    - https://berrybytes.github.io/helm-chart-org/packages/flagger/v1.24.1/flagger-1.24.1.tgz
     version: 1.24.1
 generated: "2022-07-07T23:05:40.956870927+05:45"
