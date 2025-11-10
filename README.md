@@ -170,7 +170,7 @@ Default namespaces are defined in `packages/namespaces/namespace.json`:
 
 ## Repository Hosting
 
-Charts are served from GitHub Pages at `https://berrybytes.github.io/helm-chart-org/` with direct links to packaged charts and CRDs in the repository structure.
+Charts are served from GitHub Pages at `https://github.com/berrybytes/helm-chart-org/` with direct links to packaged charts and CRDs in the repository structure.
 
 ---
 
