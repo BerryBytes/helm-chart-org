@@ -362,5 +362,5 @@ entries:
     - https://github.com/openebs/openebs
     urls:
     - https://berrybytes.github.io/helm-chart-org/packages/openebs/v3.9.0/openebs-3.9.0.tgz
-    version: 3.9.0  
+    version: 3.9.0
 generated: "2022-07-07T23:05:40.956870927+05:45"
