@@ -188,4 +188,3 @@ Interested in contributing? Please follow these guidelines:
 ## Credits
 
 Special thanks to [Berrybytes](https://www.berrybytes.com) for maintaining this project and enabling seamless Kubernetes deployments!
-
